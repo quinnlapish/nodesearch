@@ -62,6 +62,9 @@ axios.get("http://www.omdbapi.com/?t=" + artist +  "&apikey=trilogy").then(
     //console.log("The movie's rating is: " + response.data.imdbRating);
     console.log("The movie's rating is: " + response.data[0]);
 })
+
+// I couldn't seem to get the right piece of data without it saying object //
+//Here I'd choose the right data from the array to console log but I coudlnt see anything but object//
   .catch(function(error) {
     if (error.response) {
       // The request was made and the server responded with a status code
